@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f5fc;
+  font-family: "Lato", sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-left: 95px;
+  padding: 5px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-media-icons {
+  width: 4vw;
+  min-width: 50px;
+  margin: 0vh 3vh 0 0;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* ---------- MAIN: ENCRYPTER ---------- */
+
+#encrypterSection {
+  width: 60%;
+  height: 600px;
+  margin-left: 20px;
+}
+
+#textarea {
+  width: 60%;
+  height: 80%;
+  color: #0a3871;
+  background-color: transparent;
+  resize: none;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  text-align: start;
+}
+
+#textarea::placeholder {
+  color: #0a3871;
+}
+
+#btnsContent {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#btnEncrypt {
+  background-color: #0a3871;
+  color: #ffffff;
+  border: none;
+}
+
+#btnEncrypt,
+#btnDecrypt {
+  width: 30%;
+  height: 40px;
+}
+
+#btnDecrypt,
+#btnCopyClipboard {
+  color: #0a3871;
+  border: 2px solid #0a3871;
+}
+
+#btnCopyClipboard {
+  width: 84%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* ---------- MAIN: RESULTADO ---------- */
+
+#resultSection {
+  width: 30%;
+  min-height: 580px;
+  margin-right: 80px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+#styleCenter {
+  height: 85%;
+  width: 90%;
+  margin: auto;
+}
+
+#styleCenter > p {
+  color: #495057;
+  font-size: 24px;
+  margin: 20px;
+}
+
+#imgContent {
+  display: flex;
+  justify-content: center;
+}
+
+#imgContent > img {
+  width: 100%;
+  height: 60%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#noContent {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+
+
+/* ---------- VIEWPORT 1024px ---------- */
+
+@media (max-width: 1024px) {
+
+  #textarea {
+    font-size: 20px;
+  }
+
+  #styleCenter > p{
+    font-size: 16px;
+  }
+}
+
+
+
+/* ---------- VIEWPORT 768px ---------- */
+
+@media (max-width: 768px) {
+  /* ---------- HEADER ---------- */
+
+  header img {
+    margin-left: 30px;
+  }
+
+  .social-media-icons {
+    margin: 0 2vh 0 0;
+  }
+
+  /* ---------- MAIN ---------- */
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ---------- MAIN: ENCRYPTER ---------- */
+
+  #encrypterSection {
+    width: 90%;
+    margin: 0px;
+  }
+
+  #textarea {
+    width: 100%;
+  }
+
+  #btnsContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* ---------- MAIN: RESULTADO ---------- */
+
+  #resultSection {
+    width: 90%;
+    margin: auto;
+    min-height: 120px;
+  }
+
+  #imgContent {
+    display: none;
+  }
+
+
+  #btnEncrypt,
+  #btnDecrypt {
+    width: 48%;
+  }
+}
+
+/* ---------- VIEWPORT 480px ---------- */
+
+@media (max-width: 480px) {
+  /* ---------- HEADER ---------- */
+
+  .social-media-icons {
+    display: none;
+  }
+
+  /* ---------- MAIN ---------- */
+  main {
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ---------- MAIN: ENCRYPTER ---------- */
+
+  #encrypterSection {
+    width: 90%;
+    height: 450px;
+    margin-left: none;
+    margin: none;
+  }
+
+  #btnsContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #btnEncrypt,
+  #btnDecrypt {
+    width: 90%;
+    margin: 5px 0px;
+  }
+
+  /* ---------- MAIN: RESULTADO ---------- */
+
+}

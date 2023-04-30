@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador: Alura</title>
+  </head>
+  <body>
+    <header>
+      <img src="Assets/src/logo.png" alt="Logo Alura" />
+      <div id="profile">
+        <div class="description">
+          <div class="social-media">
+            <a href="https://github.com/asgarynt" target="_blank"
+              ><img class="social-media-icons" src="Assets/src/github.png"
+            /></a>
+            <a href="https://www.linkedin.com/in/asgarynt/" target="_blank"
+              ><img class="social-media-icons" src="Assets/src/linkedin.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="encrypterSection">
+        <textarea id="textarea" placeholder="Ingrese el texto aquí"></textarea>
+        <div id="btnsContent">
+          <input type="button" value="Encriptar" class="btn" id="btnEncrypt" />
+          <input type="button" value="Desencriptar" class="btn" id="btnDecrypt" />
+        </div>
+      </section>
+      <section id="resultSection">
+        <div id="styleCenter">
+          <div id="sectionNoContent">
+            <div id="imgContent">
+              <img src="/Assets/src/littleDoll.png" alt="Muñeco" />
+            </div>
+            <div id="noContent">
+              <h3>No se encontró ningun mensaje</h3>
+              <p>Escribe el texto que desea encriptar o desencriptar</p>
+            </div>
+          </div>
+        </div>
+        <div id="pContent">
+          <input type="button" value="Copiar" class="btn" id="btnCopyClipboard" />
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
